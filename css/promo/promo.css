@@ -1,0 +1,43 @@
+.promo {
+	margin-top: 8.5rem;
+}
+
+.promo-inner {
+	color: var(--text-color);
+	padding-top: 6.75rem;
+	padding-bottom: 6.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	background: var(--bg-accent);
+	border-radius: 0.42125rem;
+}
+
+.promo__title {
+	text-align: center;
+	font-size: 2.25rem;
+	line-height: 120%;
+	letter-spacing: -0.01em;
+	font-weight: 400;
+	text-wrap: balance;
+}
+
+.promo__btn {
+	color: var(--link);
+	background: var(--text-color);
+	transition: all 0.2s ease;
+	padding-left: 1.41875rem;
+	padding-right: 1.41875rem;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.3em;
+	min-height: 2.5rem;
+}
+
+.promo__btn:hover {
+	color: var(--title-swiper);
+}

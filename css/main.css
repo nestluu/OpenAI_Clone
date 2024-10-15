@@ -1,0 +1,100 @@
+@import './reset.css';
+@import './swiper/swiper.css';
+@import './header/header.css';
+@import './swiper/swiperSmall.css';
+@import './promo/promo.css';
+@import './footer/footer.css';
+@import './modals/modals.css';
+@import './search/search.css';
+@import './preview/previews.css';
+@import './popup/popup.css';
+@import './media.css';
+@import './mobile-nav/mobile-nav.css';
+
+@font-face {
+	font-family: 'Söhne, sans-serif';
+	src: url('./../fonts/TestSohne-Dreiviertelfett-BF663d89ccc5f66.otf')
+			format('truetype'),
+		url('./../fonts/TestSohne-Buch-BF663d89cd32e6a.otf') format('truetype'),
+		url('./../fonts/TestSohne-BuchKursiv-BF663d89cd3e887.otf')
+			format('truetype');
+}
+
+:root {
+	--background-color: #f9f9f9;
+	--text-color: #080808;
+	--popup-bg: rgba(249, 249, 249, 0.8);
+	--modals-bg: rgba(249, 249, 249, 0.5);
+	--logo: black;
+	--bg-gray: rgb(241, 241, 241);
+	--text-accent: #505050;
+	--placeholder: #999999;
+	--accent: rgb(215 215 215);
+	--swiper-arrow: rgb(244, 244, 244);
+	--bg-accent: #fff;
+	--link: #fff;
+	--footer-title: rgb(97, 97, 97);
+	--search-border: #8c8c8c;
+	--li-match: rgb(97, 97, 97);
+	--border: #d4d4d4;
+}
+
+[data-theme='dark'] {
+	--link: black;
+	--logo: #fff;
+	--black: black;
+	--background-color: #080808;
+	--bg-accent: #171717;
+	--bg-gray: #333333;
+	--text-color: white;
+	--text-accent: #e5e5e5;
+	--accent: #4e4e4e;
+	--placeholder: #727272;
+	--slide-shadow: #535353;
+	--title-swiper: #e9e9e9;
+	--search-border: #8c8c8c;
+	--li-match: #b4b4b4;
+	--footer-title: #b4b4b4;
+	--preview-link: #616161;
+	--popup-bg: rgba(8, 8, 8, 0.8);
+	--modals-bg: rgba(8, 8, 8, 0.5);
+	--shadow: #222;
+	--swiper-arrow: #292929;
+	--border: #313131;
+}
+
+body {
+	position: relative;
+	font-family: 'Söhne', sans-serif;
+	font-weight: 400;
+}
+
+body > *:not(header):not(.modal) {
+	transition: transform 0.6s ease-in-out;
+}
+
+::selection {
+	background-color: white;
+	color: black;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70rem;
+	padding: 0 1rem;
+}
+
+.container-right {
+	padding-left: calc((100% - 70rem) / 2 + 1rem);
+
+	@media (max-width: 450px) {
+		padding-left: 1rem;
+	}
+}
+a {
+	color: var(--text-color);
+}
+body {
+	background: var(--background-color);
+}
